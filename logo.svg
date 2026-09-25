@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>InTempo – Clock note in motion</title>
+  <rect width="512" height="512" rx="112" fill="#4b2e4f"/>
+  <path d="M196 112q-30 44 0 92M150 136q-20 30 0 62" fill="none" stroke="#cccbfa" stroke-width="12" stroke-linecap="round" opacity=".45"/>
+  <g transform="rotate(-10 214 344)">
+    <path d="M290 96v244" stroke="#cccbfa" stroke-width="24" stroke-linecap="round"/>
+    <path d="M282 92c26 40 98 52 100 124-16-34-50-50-100-56Z" fill="#cccbfa"/>
+    <circle cx="214" cy="344" r="88" fill="#cccbfa"/>
+    <path d="M214 344V292M214 344H252" stroke="#4b2e4f" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="214" cy="344" r="10" fill="#4b2e4f"/>
+    <g fill="#4b2e4f" opacity=".6"><circle cx="214" cy="272" r="6"/><circle cx="214" cy="416" r="6"/><circle cx="142" cy="344" r="6"/></g>
+  </g>
+</svg>
