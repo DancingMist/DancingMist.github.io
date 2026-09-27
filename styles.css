@@ -120,20 +120,37 @@ h2 {
   font-size: 1.3rem;
 }
 
+/* Feature lists: a simple divided list, one column, easy to read on a phone. */
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
+  margin: 1.25rem 0 0;
   padding: 0;
   list-style: none;
+  border-top: 1px solid var(--border);
 }
 
 .features li {
-  padding: 1rem 1.25rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  position: relative;
+  padding: 0.9rem 0 0.9rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.features li::before {
+  content: '';
+  position: absolute;
+  left: 0.15rem;
+  top: 1.45rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--plum);
+}
+
+/* Planned features get an outlined marker instead of a filled one. */
+.features.upcoming li::before {
+  background: transparent;
+  border: 2px solid var(--plum);
+  width: 9px;
+  height: 9px;
 }
 
 .features strong {
