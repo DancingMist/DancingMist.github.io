@@ -130,27 +130,24 @@ h2 {
 
 .features li {
   position: relative;
-  padding: 0.9rem 0 0.9rem 1.5rem;
+  padding: 0.9rem 0;
   border-bottom: 1px solid var(--border);
 }
 
-.features li::before {
+/* Planned features get an outlined marker; available ones have none. */
+.features.upcoming li {
+  padding-left: 1.5rem;
+}
+
+.features.upcoming li::before {
   content: '';
   position: absolute;
   left: 0.15rem;
   top: 1.45rem;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--plum);
-}
-
-/* Planned features get an outlined marker instead of a filled one. */
-.features.upcoming li::before {
-  background: transparent;
-  border: 2px solid var(--plum);
   width: 9px;
   height: 9px;
+  border-radius: 50%;
+  border: 2px solid var(--plum);
 }
 
 .features strong {
