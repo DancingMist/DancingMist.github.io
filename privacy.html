@@ -21,18 +21,19 @@
 
     <main class="wrap">
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: 29 September 2026 (lesson notes added)</p>
+      <p class="muted">Last updated: 29 September 2026 (web version added)</p>
 
       <p>
-        This policy explains how the InTempo desktop app (“InTempo”, “the app”) handles information, including
-        information from your Google account. InTempo is developed by Kevin Leong in Australia. If you have any
-        questions, email <a href="mailto:kleong.jkim@gmail.com">kleong.jkim@gmail.com</a>.
+        This policy explains how InTempo handles information, including information from your Google account. InTempo
+        is available as a web app that you use in your web browser on a computer, tablet or phone (“the web version”),
+        and as a Windows desktop app (“the desktop app”). InTempo is developed by Kevin Leong in Australia. If you have
+        any questions, email <a href="mailto:kleong.jkim@gmail.com">kleong.jkim@gmail.com</a>.
       </p>
 
       <h2>The short version</h2>
       <ul>
-        <li>Everything you enter in InTempo is stored on your own computer.</li>
-        <li>There is no InTempo server, and we never receive a copy of your information.</li>
+        <li>In the web version, your information is stored securely online, in a private space that only your signed-in Google account can open.</li>
+        <li>In the desktop app, your information is stored on your own computer.</li>
         <li>Google sign-in is used only to identify you and, if you turn on calendar sync, to show and update your lessons in Google Calendar.</li>
         <li>We don’t sell, share or use your information for advertising.</li>
       </ul>
@@ -41,10 +42,23 @@
       <p>
         InTempo stores the information you type into it: your business details (such as your name, address, contact
         and bank details, and logo), your students and their parents’ or guardians’ names and contact details, your
-        lessons, rates and invoices, and any lesson notes and private notes you write about your students. This
-        information is saved in a file on your computer. It is not sent to us or to anyone else. It only leaves your
-        computer if you choose to, for example by saving a backup, saving an invoice as a PDF, printing, emailing an
-        invoice yourself, or copying a lesson note to send to a parent yourself.
+        lessons, rates and invoices, and any lesson notes and private notes you write about your students.
+      </p>
+      <ul>
+        <li>
+          <strong>Web version:</strong> this information is stored on servers run by our hosting provider, Cloudflare,
+          in a separate database for each teacher’s account. Only your signed-in account can reach your database.
+          Cloudflare stores it on our behalf and may store it outside Australia. We don’t look at your information,
+          except when you ask us to help with a problem or where the law requires it.
+        </li>
+        <li>
+          <strong>Desktop app:</strong> this information is saved in a file on your computer. It is not sent to us or to
+          anyone else.
+        </li>
+      </ul>
+      <p>
+        Your information only goes anywhere else if you choose to send it, for example by saving an invoice as a PDF,
+        printing, emailing an invoice yourself, or copying a lesson note to send to a parent.
       </p>
 
       <h2>Information from your Google account</h2>
@@ -66,9 +80,8 @@
         </li>
       </ul>
       <p>
-        This information is used only to provide these features to you. It is kept on your computer. It is not
-        transferred to us or to anyone else, and it is not used for advertising or to train artificial intelligence
-        models.
+        This information is used only to provide these features to you. It is not transferred to anyone else, and it is
+        not used for advertising or to train artificial intelligence models.
       </p>
       <p>
         InTempo’s use and transfer of information received from Google APIs will adhere to the
@@ -77,32 +90,52 @@
       </p>
 
       <h2>How your sign-in is kept secure</h2>
+      <p>Signing in happens on Google’s own sign-in page. InTempo never sees your Google password.</p>
+      <ul>
+        <li>
+          <strong>Web version:</strong> sign-in is completed on InTempo’s server. The access Google grants to InTempo is
+          kept on the server and is never sent to your browser. Your browser is given a secure sign-in cookie, which
+          scripts can’t read, that keeps you signed in for up to 30 days.
+        </li>
+        <li>
+          <strong>Desktop app:</strong> the access Google grants to InTempo is stored on your computer, encrypted using
+          your computer’s built-in security.
+        </li>
+      </ul>
+
+      <h2>Cookies and storage on your device</h2>
       <p>
-        Signing in happens on Google’s own sign-in page in your web browser. InTempo never sees your Google password.
-        The access Google grants to InTempo is stored on your computer, encrypted using your computer’s built-in
-        security.
+        The web version uses one cookie, to keep you signed in. It also remembers on your device which reminders it has
+        already shown you. There are no advertising or tracking cookies, and no analytics.
       </p>
 
       <h2>Sharing</h2>
       <p>
-        We do not sell, rent or share your information. Information from Google is exchanged directly between your
-        computer and Google. InTempo has no server of its own, so there is no InTempo copy of your data.
+        We do not sell, rent or share your information. The only other company involved is Cloudflare, which hosts the
+        web version and stores its information on our behalf. Information from Google is exchanged directly between
+        InTempo and Google.
       </p>
 
       <h2>Keeping and deleting your information</h2>
       <ul>
         <li>
-          <strong>Signing out</strong> in InTempo (Settings → Sign Out) removes the saved sign-in from your computer and
-          asks Google to cancel InTempo’s access.
+          <strong>Signing out</strong> (Settings → Sign Out) signs you out. In the web version it signs you out on all
+          your devices. In the desktop app it removes the saved sign-in from your computer and asks Google to cancel
+          InTempo’s access.
         </li>
         <li>
-          You can also remove InTempo’s access at any time from your
+          You can remove InTempo’s access to your Google account at any time from your
           <a href="https://myaccount.google.com/permissions">Google Account’s third-party access page</a>.
         </li>
         <li>
-          Your InTempo information stays on your computer until you delete it. Uninstalling the app keeps your
-          information in case you reinstall. To remove it completely, delete the InTempo folder in your computer’s app
-          data folder (on Windows, <code>%APPDATA%\InTempo</code>) and any backup files you saved.
+          <strong>Web version:</strong> your information is kept until you ask us to delete it. To delete your account
+          and everything stored with it, email <a href="mailto:kleong.jkim@gmail.com">kleong.jkim@gmail.com</a> from
+          the Google account you use with InTempo, and we will delete it within 30 days.
+        </li>
+        <li>
+          <strong>Desktop app:</strong> your information stays on your computer until you delete it. Uninstalling the
+          app keeps your information in case you reinstall. To remove it completely, delete the InTempo folder in your
+          computer’s app data folder (on Windows, <code>%APPDATA%\InTempo</code>) and any backup files you saved.
         </li>
       </ul>
 
@@ -110,8 +143,9 @@
       <p>
         InTempo is used by teachers, not by students. Teachers may enter their students’ names, their parents’ or
         guardians’ contact details, and notes about their lessons (for example what was covered and what to practise).
-        This information stays on the teacher’s computer and is not sent to us. Lesson notes reach parents only when the
-        teacher copies and sends them.
+        This information is kept in the teacher’s own private space (online in the web version, or on their computer in
+        the desktop app), and is not shared with anyone. Lesson notes reach parents only when the teacher copies and
+        sends them.
       </p>
 
       <h2>Changes to this policy</h2>
