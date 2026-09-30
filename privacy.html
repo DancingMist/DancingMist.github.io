@@ -21,7 +21,7 @@
 
     <main class="wrap">
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: 29 September 2026 (web version added)</p>
+      <p class="muted">Last updated: 30 September 2026 (backups, downloading your data, calendar sync in the web version)</p>
 
       <p>
         This policy explains how InTempo handles information, including information from your Google account. InTempo
@@ -50,6 +50,11 @@
           in a separate database for each teacher’s account. Only your signed-in account can reach your database.
           Cloudflare stores it on our behalf and may store it outside Australia. We don’t look at your information,
           except when you ask us to help with a problem or where the law requires it.
+          <br />
+          Cloudflare also keeps backup copies of each database for 30 days. We use them only to recover your
+          information, for example if something is deleted by mistake and you ask us to put it back. We also keep a
+          short list of the teachers using the web version (name, email address and when the app was last used), so we
+          can find your account when you ask for help or for it to be deleted.
         </li>
         <li>
           <strong>Desktop app:</strong> this information is saved in a file on your computer. It is not sent to us or to
@@ -57,7 +62,8 @@
         </li>
       </ul>
       <p>
-        Your information only goes anywhere else if you choose to send it, for example by saving an invoice as a PDF,
+        Your information only goes anywhere else if you choose to send it, for example by downloading your data, saving
+        an invoice as a PDF,
         printing, emailing an invoice yourself, or copying a lesson note to send to a parent.
       </p>
 
@@ -72,7 +78,7 @@
           this only to keep your lessons and your calendar in step:
           <ul>
             <li>lessons you add, change, cancel or delete in InTempo are added, changed or removed as calendar events titled like “Amy Chen Lesson”;</li>
-            <li>events with the word “Lesson” in their title (for example “Amy Chen Lesson (Online)”) are imported as lessons, creating the student in InTempo if needed, and upcoming ones get a hidden InTempo label so the app can recognise them;</li>
+            <li>events whose title marks them as a lesson (for example “Amy Chen Lesson (Online)” or “Trial - Amy Chen”; you can change these words in Settings) or names one of your students are imported as lessons, from four weeks before the week you turn sync on onwards. The student is created in InTempo if needed, and upcoming lessons get a hidden InTempo label so the app can recognise them;</li>
             <li>when a lesson event is moved or deleted in Google Calendar, the lesson is updated or removed in InTempo.</li>
           </ul>
           InTempo reads your other events only to find lesson events. It never changes them and doesn’t keep a copy of
@@ -93,9 +99,11 @@
       <p>Signing in happens on Google’s own sign-in page. InTempo never sees your Google password.</p>
       <ul>
         <li>
-          <strong>Web version:</strong> sign-in is completed on InTempo’s server. The access Google grants to InTempo is
-          kept on the server and is never sent to your browser. Your browser is given a secure sign-in cookie, which
-          scripts can’t read, that keeps you signed in for up to 30 days.
+          <strong>Web version:</strong> sign-in is completed on InTempo’s server. The long-lasting access Google grants
+          to InTempo is kept on the server and is never sent to your browser. When calendar sync is on, your browser is
+          given a short-lived key (lasting about an hour) so it can update your calendar directly with Google. Your
+          browser is also given a secure sign-in cookie, which scripts can’t read, that keeps you signed in for up to 30
+          days.
         </li>
         <li>
           <strong>Desktop app:</strong> the access Google grants to InTempo is stored on your computer, encrypted using
@@ -105,7 +113,8 @@
 
       <h2>Cookies and storage on your device</h2>
       <p>
-        The web version uses one cookie, to keep you signed in. It also remembers on your device which reminders it has
+        The web version uses one cookie to keep you signed in, plus a short-lived one (about 10 minutes) while you sign
+        in. It also remembers on your device which reminders it has
         already shown you. There are no advertising or tracking cookies, and no analytics.
       </p>
 
@@ -128,9 +137,14 @@
           <a href="https://myaccount.google.com/permissions">Google Account’s third-party access page</a>.
         </li>
         <li>
+          <strong>Web version:</strong> you can download a copy of everything at any time (Settings → Backup →
+          Download My Data), and load a copy back in with Restore from File.
+        </li>
+        <li>
           <strong>Web version:</strong> your information is kept until you ask us to delete it. To delete your account
           and everything stored with it, email <a href="mailto:kleong.jkim@gmail.com">kleong.jkim@gmail.com</a> from
-          the Google account you use with InTempo, and we will delete it within 30 days.
+          the Google account you use with InTempo, and we will delete it within 30 days and cancel InTempo’s access to
+          your Google account. Cloudflare’s backup copies are removed automatically within 30 days after that.
         </li>
         <li>
           <strong>Desktop app:</strong> your information stays on your computer until you delete it. Uninstalling the
@@ -142,7 +156,7 @@
       <h2>Children’s information</h2>
       <p>
         InTempo is used by teachers, not by students. Teachers may enter their students’ names, their parents’ or
-        guardians’ contact details, and notes about their lessons (for example what was covered and what to practise).
+        guardians’ contact details, and notes about their lessons (for example what was covered and what to practice).
         This information is kept in the teacher’s own private space (online in the web version, or on their computer in
         the desktop app), and is not shared with anyone. Lesson notes reach parents only when the teacher copies and
         sends them.
